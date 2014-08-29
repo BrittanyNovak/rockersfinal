@@ -27,7 +27,14 @@ function makeMessage() {
 	
 	if(alertMessage != ""){alert("You are missing\n" + alertMessage);}
 	else {
-			alert( "One day I will travel to " + t1.val() + " To become a famous " + t2.val() + " Live in a " + t3.val() " Grow a garden of " + t4.val() + " Practice swimming in a pool filled with " + t5.val() " Then sing this song every night " + t6.val() + " right before I " + t7.val();
+	var message= "One day I will travel to " + t1.val() + "<br>";
+	message += " To become a famous " + t2.val() +  "<br>";
+	message+= " Live in a " + t3.val() + "<br>";
+	message+= " Grow a garden of " + t4.val() + "<br>";
+	message+= " Practice swimming in a pool filled with " + t5.val() + "<br>";
+	message+= " Then sing this song every night " + t6.val() + "<br>";
+	message+= " right before I " + t7.val() "<br>";
+	$("#welcomeMessage").append(message);
 		}
 }
 
