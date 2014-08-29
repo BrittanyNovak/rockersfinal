@@ -9,7 +9,6 @@
 	</head>
 	
 	<body>
-		<form action="form.php" method="post"> 
 		<div data-role="page" id="one" data-theme="e">
 			<div data-role="header">
 				<h4>Mad-Libs Final</h4>
@@ -17,44 +16,28 @@
 			
 		<div data-role="content">
 			<h3>Mad-Libs Final</h3>
-			<h4>Please fill in the blanks</h4>
+			<div id="submitForm">
+				<legend>Fill in the Blanks</legend><br>		
+					<div><label>One day I will travel to:<input type="text" id="one" class="odd"></label></div><br>
+					<div><label>To become a famous:<input type="text" id="two" class="even"></label></div><br>
+					<div><label>Live in a:<input type="text" id="three" class="odd"></label></div><br>
+					<div><label>Grow a garden of:<input type="text" id="four" class="even"></label></div><br>
+					<div><label>Practice swimming in a pool filled with:<input type="text" id="five" class="odd"></label></div><br>
+					<div><label>Then sing this song every night:<input type="text" id="six" class="even"></label></div><br>
+					<div><label>Right before I:<input type="text" id="seven" class="odd"></label></div><br>
+				<input type="button" name="submit" value="Submit" onClick="makeMessage();">
+			</div>
+				<div id="welcomeMessage">
+			</div>
 		</div>
-		
-		<div data-role="fieldcontain">
-			<label for="name">There once was a man from:</label>
-			<input type="text" name="name" id="one" value=""  />
+			<div data-role="footer">
+				<h4>Thank you for Participating</h4>
+			</div>
 		</div>
-		
-		<div data-role="fieldcontain">
-			<label for="name">Who dreamed he was eating his:</label>
-			<input type="text" name="name" id="two" value=""  />
-		</div>
-		
-		<div data-role="fieldcontain">
-			<label for="name">He woke with a:</label>
-			<input type="text" name="name" id="three" value=""  />
-		</div>
-		
-		<div data-role="fieldcontain">
-			<label for="name">In the middle of the:</label>
-			<input type="text" name="name" id="four" value=""  />
-		</div>
-		
-		<div data-role="fieldcontain">
-			<label for="name">To find his dream had come:</label>
-			<input type="text" name="name" id="five" value=""  />
-		</div>
-		<p><a href="#pageTwo" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Submit Answers</a></p>
-		</form>
-		
-		<div data-role="footer">
-			<h4>Thank you for Participating</h4>
-		</div>
-	</div>
 
-	<div data-role="page" id="pageTwo" data-theme="d">
+	<div data-role="page" id="pageTwo" data-theme="e">
 		<div data-role="header">
-			<h4>Mad-Libs Submits & Store</h4>
+			<h4>Mad-Libs Submits & Story</h4>
 		</div>
 		
 	</div>
